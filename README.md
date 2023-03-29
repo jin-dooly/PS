@@ -10,7 +10,7 @@ Problem Solving<br>
 
 ![image](https://user-images.githubusercontent.com/92137309/228510984-d9b07dae-2b4c-496a-97a4-f5f3a63893dc.png)
 
-![image](https://user-images.githubusercontent.com/92137309/228511098-0c6c3e54-cc8b-4b76-8ed4-a190ecba9ddc.png)
+![image](https://user-images.githubusercontent.com/92137309/228511930-170a7c33-d1a6-474b-8c79-0f04e0aa7adc.png)
 
 <br><br>
 <br>
@@ -19,11 +19,11 @@ Problem Solving<br>
 
 2023.02.27
 - 10201/ 1397/ 185
-- 69483/ 67
+- 69483등/ 67
 
 2023.03.29
 - 7217/ 1450/ 208
-- 31398/ 143
+- Gold 5/ 143
   
   
   
