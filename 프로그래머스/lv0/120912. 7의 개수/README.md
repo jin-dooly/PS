@@ -1,10 +1,10 @@
 # [level 0] 7의 개수 - 120912 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120912) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120912?language=javascript) 
 
 ### 성능 요약
 
-메모리: 77.6 MB, 시간: 0.02 ms
+메모리: 33.4 MB, 시간: 0.14 ms
 
 ### 구분
 
