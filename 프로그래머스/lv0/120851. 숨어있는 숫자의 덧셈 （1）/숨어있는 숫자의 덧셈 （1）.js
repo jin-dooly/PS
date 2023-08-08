@@ -1,3 +1,4 @@
 function solution(my_string) {
-    return my_string.split("").map(e => e.replace(/[A-z]/g,"")).reduce((acc, cur) => acc+Number(cur), 0);
+    console.log(Number('1'));
+    return my_string.split("").reduce((acc, cur) => Number(cur) ? acc+Number(cur) : acc, 0);
 }
