@@ -1,7 +1,7 @@
 function solution(cards1, cards2, goal) {
     //두가지 풀이
     // 1. 투포인터
-    // 2. 배열 비교
+    /*
     let p1 = 0;
     let p2 = 0;
     for(var i=0; i<goal.length; i++) {
@@ -16,4 +16,11 @@ function solution(cards1, cards2, goal) {
         return "No";
     }
     return "Yes";
+    */
+    
+    // 2. 배열 비교
+    let case1 = goal.filter(e => cards1.includes(e)).join(" ");
+    let case2 = goal.filter(e => cards2.includes(e)).join(" ");
+    
+    return cards1.join(" ").includes(case1) && cards2.join(" ").includes(case2) ? "Yes" : "No";
 }
