@@ -1,28 +1,27 @@
 let [ N,...input ] = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n").map(v => v.split(" "));
 
-const queue = [];
-let result = '';
-for(let i = 0; i < N; i++) {
-    //
-    switch(input[i][0]){
-        case "push":
-            queue.push(input[i][1]);
-            break;
-        case "pop":
-            result += (queue.length === 0 ? "-1" : queue.shift()) + "\n";
-            break;
-        case "size":
-            result += (queue.length) + "\n";
-            break;
-        case "empty":
-            result += (queue.length === 0 ? "1" : "0") + "\n";
-            break;
-        case "front":
-            result += (queue.length === 0 ? "-1" : queue[0]) + "\n"; 
-            break;
-        case "back":
-            result += (queue.length === 0 ? "-1" : queue[queue.length - 1]) + "\n";
-            break;
-    };    
-};
-console.log(result);
+var queue = [];
+let answer = [];
+
+for(var i=0; i<N; i++){
+  var order = input[i];
+  if(order[0].includes('push')){
+    queue.push(order[1]);
+  }
+  else if(order[0].includes('pop')){
+    answer.push(queue.shift() || -1);
+  }
+  else if(order[0].includes('size')){
+    answer.push(queue.length);
+  }
+  else if(order[0].includes('empty')){
+    answer.push(queue.length? 0 : 1);
+  }
+  else if(order[0].includes('front')){
+    answer.push(queue[0] || -1);
+  }
+  else if(order[0].includes('back')){
+    answer.push(queue[queue.length-1] ||-1);
+  }
+}
+console.log(answer.join("\n"));
