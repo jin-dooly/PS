@@ -8,7 +8,7 @@ Problem Solving<br>
 
 ### 👉Programmers & Baekjoon (2023.03.29)
 
-![image](https://github.com/jini-zzang/PS/assets/92137309/8d81b3ca-a97d-42da-b15e-9fe450c3a1d2)
+![image](https://github.com/jin-dooly/PS/assets/92137309/3dc306b6-b067-4bc0-8795-2822cbf081e8)
 
 ![image](https://user-images.githubusercontent.com/92137309/228511930-170a7c33-d1a6-474b-8c79-0f04e0aa7adc.png)
 
@@ -29,3 +29,5 @@ Problem Solving<br>
 - 3512/ 1569/ 262
 - Gold 5/ 143
   
+2023.08.28
+- 977/ 1688/ 380
