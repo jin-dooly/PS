@@ -4,7 +4,7 @@ function solution(x, y, n) {
     var queue = [y];
     while (queue.length) {
         var len = queue.length
-        console.log(queue);
+        //console.log(queue);
         for(var i=0; i<len; i++){
             var num = queue.shift()
             if(num-n === x || num/2 === x || num/3 === x) return answer+1;
