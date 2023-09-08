@@ -6,7 +6,7 @@ Problem Solving<br>
 <br><br><br>
 
 
-### 👉Programmers & Baekjoon (2023.03.29)
+### 👉Programmers & Baekjoon
 
 ![image](https://github.com/jin-dooly/PS/assets/92137309/3dc306b6-b067-4bc0-8795-2822cbf081e8)
 
