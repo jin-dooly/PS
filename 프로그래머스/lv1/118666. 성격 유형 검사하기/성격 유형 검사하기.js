@@ -13,7 +13,6 @@ function solution(survey, choices) {
         }
         result[type] ? result[type] += score : result[type] = score;
     })
-    console.log(result)
      let answer = (result['R']|0) < (result['T']|0) ? 'T' : 'R';
     answer += (result['C']|0) < (result['F']|0) ? 'F' : 'C';
     answer += (result['J']|0) < (result['M']|0) ? 'M' : 'J';
