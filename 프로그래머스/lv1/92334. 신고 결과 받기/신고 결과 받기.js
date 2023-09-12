@@ -8,16 +8,14 @@ function solution(id_list, report, k) {
     var reportId = {}
     report.forEach(str => {
         var [from, to] = str.split(" ");
-        reportId[to] ? reportId[to].add(from) : reportId[to] = new Set().add(from)
+        if(!reportId[to]) reportId[to] = new Set();
+        reportId[to].add(from);
     })
     // console.log(fromId);
+    
     for(id in reportId) {
-        if(reportId[id].size >= k) {
-            // console.log(id)
-            for(fromId of reportId[id]){
-                answer[idIndex[fromId]]++;
-            }
-        }
+        if(reportId[id].size < k) continue;
+        reportId[id].forEach(fromId => answer[idIndex[fromId]]++);
     }
     return answer;
 }
