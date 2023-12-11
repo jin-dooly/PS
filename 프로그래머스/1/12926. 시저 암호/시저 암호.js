@@ -1,15 +1,6 @@
 function solution(s, n) {
-    var answer = '';
-    return [...s]
-        .map(ch => {
-            let code = ch.charCodeAt(0);
-            if(65 <= code && code <= 90) {
-                code = code+n > 90 ? code+n-26 : code+n;
-            }
-            else if(97 <= code) {
-                code = code+n > 122 ? code+n-26 : code+n;
-            }
-            return String.fromCharCode(code)
-        })
-        .join('');
+    return s.replace(/([a-z])|([A-Z])/g, (c, lowerCase) => {
+        var startCode = lowerCase ? 'a'.charCodeAt(0) : 'A'.charCodeAt(0)
+        return String.fromCharCode((c.charCodeAt(0) - startCode + n) % 26 + startCode)
+    })
 }
