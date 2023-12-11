@@ -3,7 +3,7 @@ function solution(n) {
     for(i=2; i<=n; i++) {
         if(!answer[i]) continue;
         for(j=i*2; j<=n; j+=i){
-            if(!answer) continue;
+            if(!answer[j]) continue;
             answer[j] = false;
         }
     }
