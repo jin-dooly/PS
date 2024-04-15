@@ -1,9 +1,10 @@
 function solution(s){
-    var answer = 0;
-    for(cur of s){
-        cur === ')' ? answer-- : answer++
-        if(answer < 0) return false
+    let cnt = 0;
+    
+    for(let ch of s){
+        if(ch === "(") cnt++;
+        else cnt--;
+        if(cnt < 0) return false;
     }
-
-    return answer ? false : true;
+    return cnt === 0
 }
